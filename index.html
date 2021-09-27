@@ -5,32 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Bringing it Together Problem 2</title>
+    <title>CE_07</title>
 </head>
 <body>
-
-
-
-    <form id="movieTicket">
-
-
-        <h1>Movie Ticket Cost</h1>  
-        <h3>Type in your age and the movies' start time and I will tell ou the cost.</h3>
-        <input type="number" id="age" min="0" max="120" required><label for="age">Age</label><br>
-        <h3>Enter the start time of the movie Hr: Mins:</h3>
-        <input type="number" id="timeHours" min="1" max="12" required><label for="timeHours">Hr</label>
-        <input type="number" id="timeMins" min="0" max="59" required>
-        <label for="timeMins">Min</label><br>
-        <input type="radio" name="timeOfDay" id="am" value="am"><label for="am">AM</label>
-        <input type="radio" name="timeOfDay" id="pm"value="pm" checked><label for="pm">PM</label>
-        <br><br>
-
-        <input type="button" id="calcTicketPrice" value="Get Ticket Price">
+    <h1>Body Mass Calculator</h1>
+    <h2>Fill in the fields to calulate your BMI or Body Mass Index.</h2>
+    <form>
+        <h2>Height</h2>
+        <input type="number" id="feet" min="0" max="9" required><label for="feet">Feet</label>
+        <input type="number" id="inches" min="0" max="12" step=".01" required><label for="inches">Inches</label>
         <br>
-        <h1 id="ticketPrice"></h1>
+        <h2>Weight</h2>
+        <input type="number" id="lbs" min="0" max="1400" step=".01" required><label for="lbs">Lbs</label>
+        <br>
+        <input type="button" id="calcButton" value="Calculate BMI">
+        <h1 id="finalResults"></h1>
+        <img id="image" src="IMG/graphicsCE07/underWeight.jpg" height="360" width="400" style="visibility: hidden;">
+
+        
 
 
-    </form>  
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
     <script src="JS/script.js"></script>
 </body>
 </html>
